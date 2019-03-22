@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Olympics.Entities\Olympics.Entities.csproj" />
+    <ProjectReference Include="..\Olypmics.Common\Olypmics.Common.csproj" />
   </ItemGroup>
 
 </Project>

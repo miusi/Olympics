@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olympics.Server", "Olympics
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olympics.Client", "Olympics.Client\Olympics.Client.csproj", "{D2109413-5539-4AFF-BBBB-43E30210FC2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olympics.Base", "Olympics.Base\Olympics.Base.csproj", "{958A16B2-D489-474F-92CF-821AA0E19D84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olympics.BaseApi", "Olympics.BaseApi\Olympics.BaseApi.csproj", "{39767485-CBEF-421C-B5E9-950B51F7AA2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olympics.BaseApi", "Olympics.BaseApi\Olympics.BaseApi.csproj", "{39767485-CBEF-421C-B5E9-950B51F7AA2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olypmics.Common", "Olypmics.Common\Olypmics.Common.csproj", "{F69337DA-32D1-4C16-B3AB-1E32DD58029D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +43,14 @@ Global
 		{D2109413-5539-4AFF-BBBB-43E30210FC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2109413-5539-4AFF-BBBB-43E30210FC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2109413-5539-4AFF-BBBB-43E30210FC2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{958A16B2-D489-474F-92CF-821AA0E19D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{958A16B2-D489-474F-92CF-821AA0E19D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{958A16B2-D489-474F-92CF-821AA0E19D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{958A16B2-D489-474F-92CF-821AA0E19D84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39767485-CBEF-421C-B5E9-950B51F7AA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39767485-CBEF-421C-B5E9-950B51F7AA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39767485-CBEF-421C-B5E9-950B51F7AA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39767485-CBEF-421C-B5E9-950B51F7AA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F69337DA-32D1-4C16-B3AB-1E32DD58029D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69337DA-32D1-4C16-B3AB-1E32DD58029D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69337DA-32D1-4C16-B3AB-1E32DD58029D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69337DA-32D1-4C16-B3AB-1E32DD58029D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

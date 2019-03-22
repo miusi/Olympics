@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -17,6 +17,7 @@
     <ProjectReference Include="..\Olympic.Grains\Olympics.Grains.csproj" />
     <ProjectReference Include="..\Olympics.Entities\Olympics.Entities.csproj" />
     <ProjectReference Include="..\Olympics.Interfaces\Olympics.Interfaces.csproj" />
+    <ProjectReference Include="..\Olypmics.Common\Olypmics.Common.csproj" />
   </ItemGroup>
 
 </Project>
