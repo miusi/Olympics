@@ -83,7 +83,9 @@ namespace Olympics.Server
                 //增加内存的持久化
                 AddMemoryGrainStorageAsDefault()
                 //配置日志
-                .ConfigureLogging(logging => logging.AddConsole());
+                .ConfigureLogging(logging => logging.AddConsole())
+                //启用事务
+                .UseTransactions();
 
             var host = builder.Build();
             await host.StartAsync();

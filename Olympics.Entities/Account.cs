@@ -9,9 +9,28 @@ namespace Olympics.Entities
     /// </summary>
     public class Account
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public decimal Amount { get; set; }
+        public static readonly  Account[] Accounts =new Account[3];
+        static Account()
+        {
+            Accounts[0] =new Account() {
+                Id=Guid.NewGuid(),
+                Name="zhangsan"
+            };
+            Accounts[1] = new Account()
+            {
+                Id = Guid.NewGuid(),
+                Name = "lisi"
+            };
+            Accounts[2] = new Account()
+            {
+                Id = Guid.NewGuid(),
+                Name = "wangwu"
+            };
+        }
 
+
+        public Guid Id { get; set; }
+
+        public string Name { get; set; }
     }
 }

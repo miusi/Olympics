@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 [assembly: GenerateSerializer(typeof(Olympics.Grains.Balance))]
 namespace Olympics.Grains
 {
+    [Serializable]
     public class Balance
     {
         public uint Value { get; set; } = 1000;
