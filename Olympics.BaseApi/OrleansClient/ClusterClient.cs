@@ -22,23 +22,21 @@ namespace Olympics.BaseApi.OrleansClient
 
         private IClusterClient BuildClient()
         {
-           return  new ClientBuilder()
-               
-                 //与主简仓进行连接
-                 .UseLocalhostClustering()
-               .Configure<ClusterOptions>(options =>
-               {
-                   options.ClusterId = "dev";
-                   options.ServiceId = "Server";
-               })
-
-           //配置刷新简仓的时间 一般来说不会这么短
-           //.Configure<GatewayOptions>(d => d.GatewayListRefreshPeriod = TimeSpan.FromSeconds(5))
-           .ConfigureLogging(logging => logging.AddConsole()).Build();
+            return new ClientBuilder() 
+                //集群设置
+                  .UseLocalhostClustering()
+                .Configure<ClusterOptions>(options =>
+                {
+                    options.ClusterId = "dev";
+                    options.ServiceId = "Server";
+                })
+            //配置刷新简仓的时间 一般来说不会这么短
+            //.Configure<GatewayOptions>(d => d.GatewayListRefreshPeriod = TimeSpan.FromSeconds(5))
+            .ConfigureLogging(logging => logging.AddConsole()).Build();
 
         }
 
-        public async Task Connect(int retries=0,TimeSpan? delay = null)
+        public async Task Connect(int retries = 0, TimeSpan? delay = null)
         {
             if (ClusterClient.IsInitialized)
             {
@@ -74,6 +72,6 @@ namespace Olympics.BaseApi.OrleansClient
                 }
             }
         }
-         
+
     }
 }
